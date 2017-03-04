@@ -1,0 +1,77 @@
+TypeScript es la nueva forma de escribir codigo javascript.
+Se hace de esta forma dado a que escribir javascript era bastante tedioso, entonces con typescript escribes codigo inteligentemente.
+
+Typescript es un lenguaje de programacion con paradigma tipado. Eso quiere decir que para declarar variables hay que decir el tipo de dato que es.
+
+Algunos ejemplos:
+
+var brand: string = "Nike"; //La forma de declarar variables globales.
+
+let brand: string = "Nike"; //Es una forma no global de hacerlo.
+
+si es un array es esta estructura:
+Array<variable> = [];
+
+Tipado Dinamico con el tipo Any
+*Permite asignar cualquier tipo de valor
+*Aumenta flexibilidad pero tambien los errores
+*incluye null y undefined los literales javascript
+
+EJEMPLO:
+var distancia:any;
+distancia = '1000km';
+distancia = 1000;
+
+//Nos permite combinar diferentes tipos sin ningun problema
+var distancias: any[] = ['1000km',1000];
+
+ASIGNAR NOMBRE A NUMEROS CON  ENUM
+
+*Valores numeros Unicos, con nombres
+*No necesita var, ni otro nombre variable
+*Empieza por 0, O asignando numero explicito
+
+ejemplo 
+enum Marcas {
+	Acme,Estrel,Fkuga,Back,Chrycho,Litcar
+};
+var mio: Marcas = Marcas.Estrel;
+//Devolverá 1
+
+AUSENCIA DE TIPO CON VOID
+
+*Restringido a funciones, que no devuelven valor
+*Funciones sin retorno
+
+Ejemplo
+resetTimer(): void {
+	this.minutos = 24,
+	this.segundos = 59
+}
+
+No es obligatorio inicializar el tipo de dato. TypeScript lo pondria por defecto como tipo Any
+
+//FUNCIONES
+function diHola(nombre:string):
+string{
+	return 'Hola,'+nombre;
+}
+
+*funciones anonimas
+var diHola = function(nombre:string):string{
+	return 'Hola,'+nombre;
+}
+
+*Tipo de funcion en typescript
+(argumentos:tipo) => tipo devuelto
+
+//Paramentros en funciones typescript
+*Parametros opciones con ?
+ejm:
+function saludaMe(nombre:string),saludo?:string):string{
+	if(!saludo){
+		saludo = 'Hola';
+	}
+	return saludo + ',' + nombre;
+}
+
