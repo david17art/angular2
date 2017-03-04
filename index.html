@@ -15,9 +15,17 @@
       System.import ('built/timer')
         .then(null, console.error.bind(console));
     </script>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
   </head>
   <body>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <strong class="navbar-brand">Mi contador</strong>
+      </div>
+    </div>
+  </nav>
     <!-- Este es nuestro elemento personalizado tag -->
     <timer></timer>
   </body>

@@ -33,7 +33,7 @@ class TimerComponent {
     this.isPaused = true;
     this.minutes = 24;
     this.seconds = 59;
-    this.buttonLabel = 'Start';
+    this.buttonLabel = 'Inciar';
   }
 
   private tick(): void {

@@ -31,7 +31,7 @@ System.register(['@angular/core', '@angular/platform-browser-dynamic'], function
                     this.isPaused = true;
                     this.minutes = 24;
                     this.seconds = 59;
-                    this.buttonLabel = 'Start';
+                    this.buttonLabel = 'Inciar';
                 };
                 TimerComponent.prototype.tick = function () {
                     if (!this.isPaused) {
