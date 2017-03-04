@@ -1,20 +1,18 @@
 {
-    "compilerOptions": {
-        "module": "system",
-        "target": "es5",
-        "noImplicitAny": false,
-        "sourceMap": false,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "moduleResolution": "node",
-        "noImplicitAny" : false,
-        "outDir" : "built",
-        "rootDir" : ".",
-        "sourceMap": false
-    },
-    "exclude": [
-    	"node_modules",
-    	"typings/main",
-    	"typings/main.d.ts"
-    ]
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "target": "es5",
+    "module": "system",
+    "noImplicitAny": false,
+    "outDir": "built",
+    "rootDir": ".",
+    "sourceMap": false
+  },
+  "exclude": [
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
+  ]
 }
